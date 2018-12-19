@@ -7,7 +7,7 @@ html(lang="en")
         title Add Product
         link(rel="stylesheet" href="/css/main.css")
         link(rel="stylesheet" href="/css/product.css")
-        link("stylesheet" href="/css/forms.css")
+        link(rel="stylesheet" href="/css/forms.css")
     body
         header.main-header
             nav.main-header__nav
@@ -18,7 +18,7 @@ html(lang="en")
                         a.active(href="/admin/add-product") Add Product
         main
             form.product-form(action="/admin/add-product" method="POST")
-                .form-control">
+                .form-control
                     label(for="title") Title
                     input(type="text" name="title" id="title")
                 button.btn(type="submit") Add Product
