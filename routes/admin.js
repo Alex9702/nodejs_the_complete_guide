@@ -13,7 +13,8 @@ router.get('/add-product', (req, res)=>{
     res.render('add-product');
 });
 
-router.get('/add-product', (req, res)=>{
+router.post('/add-product', (req, res)=>{
+    console.log(req.body.title)
     products.push({title: req.body.title});
     res.redirect('/');
 });
